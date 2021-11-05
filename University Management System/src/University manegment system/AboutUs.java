@@ -51,18 +51,12 @@ public class AboutUs extends JFrame{
             l9.setBounds(70, 320, 600, 34);
             contentPane.add(l9);
 
-
             JLabel l10 = new JLabel("Phone - 9865896859");
             l10.setForeground(new Color(47, 79, 79));
             l10.setFont(new Font("Trebuchet MS", Font.BOLD | Font.ITALIC, 18));
             l10.setBounds(70, 400, 600, 34);
             contentPane.add(l10);
-                
-                
+          
             contentPane.setBackground(Color.WHITE);
 	}
-        
-
 }
-
-
