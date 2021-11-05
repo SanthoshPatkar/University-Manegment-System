@@ -41,14 +41,12 @@ class UpdateTeacher implements ActionListener{
         b2.setBounds(720,100,100,30);
         f.add(b2);
         b2.addActionListener(this);
-
-        
+  
         id8 = new JLabel("Update Teacher Details:");
         id8.setBounds(50,10,500,50);
         id8.setFont(new Font("serif",Font.ITALIC,40));
         id8.setForeground(Color.black);
         f.add(id8);
-
 
         id1 = new JLabel("Name");
         id1.setBounds(50,170,100,30);
@@ -131,7 +129,6 @@ class UpdateTeacher implements ActionListener{
         t9.setBounds(200,370,150,30);
         f.add(t9);
 
-
         id11= new JLabel("Aadhar No");
         id11.setBounds(400,370,100,30);
         id11.setFont(new Font("serif",Font.BOLD,20));
@@ -149,7 +146,6 @@ class UpdateTeacher implements ActionListener{
         t11=new JTextField();   
         t11.setBounds(200,420,150,30);
         f.add(t11);
-
 
         lab=new JLabel("Education");
         lab.setBounds(400,420,150,30);
@@ -189,8 +185,6 @@ class UpdateTeacher implements ActionListener{
         f.setVisible(true);
     }
 
-
-
     public void actionPerformed(ActionEvent ae){
         if(ae.getSource()==b){
             try{
@@ -217,7 +211,6 @@ class UpdateTeacher implements ActionListener{
                 if(rs.next()){
                     f.setVisible(true);
              
-
                     t1.setText(rs.getString(1));
                     t2.setText(rs.getString(2));
                     t3.setText(rs.getString(3));
