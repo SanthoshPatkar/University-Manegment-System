@@ -22,8 +22,7 @@ public class Project extends JFrame implements ActionListener{
         JMenuItem m1 = new JMenuItem("New Faculty");
         JMenuItem m2 = new JMenuItem("New Student Admission");
         master.setForeground(Color.BLUE);
-        
-        
+   
         m1.setFont(new Font("monospaced",Font.BOLD,16));
         ImageIcon icon1 = new ImageIcon(ClassLoader.getSystemResource("university/management/system/icons/icon1.png"));
         Image image1 = icon1.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
@@ -40,12 +39,9 @@ public class Project extends JFrame implements ActionListener{
         m2.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_M, ActionEvent.CTRL_MASK));
         m2.setBackground(Color.WHITE);
     
-        
         m1.addActionListener(this);
         m2.addActionListener(this);
-        
-
-  
+     
         JMenu user = new JMenu("Details");
         JMenuItem u1 = new JMenuItem("Student Details");
         JMenuItem u2 = new JMenuItem("Teacher Details");
@@ -210,8 +206,7 @@ public class Project extends JFrame implements ActionListener{
         JMenuItem ut2 = new JMenuItem("Calculator");
         JMenuItem ut3 = new JMenuItem("Web Browser");
         utility.setForeground(Color.RED); 
-        
-
+      
         ut1.setFont(new Font("monospaced",Font.BOLD,16));
         ImageIcon icon18 = new ImageIcon(ClassLoader.getSystemResource("university/management/system/icons/icon9.png"));
         Image image19 = icon18.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
@@ -219,8 +214,7 @@ public class Project extends JFrame implements ActionListener{
         ut1.setMnemonic('I');
         ut1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_C, ActionEvent.CTRL_MASK));
         ut1.setBackground(Color.WHITE);
-        
-
+       
         ut2.setFont(new Font("monospaced",Font.BOLD,16));
         ImageIcon icon20 = new ImageIcon(ClassLoader.getSystemResource("university/management/system/icons/icon10.png"));
         Image image21 = icon20.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
@@ -228,8 +222,7 @@ public class Project extends JFrame implements ActionListener{
         ut2.setMnemonic('J');
         ut2.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_X, ActionEvent.CTRL_MASK));
         ut2.setBackground(Color.WHITE);
-        
-
+     
         ut3.setFont(new Font("monospaced",Font.BOLD,16));
         ImageIcon icon10 = new ImageIcon(ClassLoader.getSystemResource("university/management/system/icons/icon11.png"));
         Image image10 = icon10.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
@@ -260,8 +253,7 @@ public class Project extends JFrame implements ActionListener{
         JMenu exit = new JMenu("Exit");
         JMenuItem ex = new JMenuItem("Exit");
         exit.setForeground(Color.RED);
-        
-
+      
         ex.setFont(new Font("monospaced",Font.BOLD,16));
         ImageIcon icon11 = new ImageIcon(ClassLoader.getSystemResource("university/management/system/icons/icon12.png"));
         Image image11 = icon11.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
@@ -271,8 +263,7 @@ public class Project extends JFrame implements ActionListener{
         ex.setBackground(Color.WHITE);
         
         ex.addActionListener(this);
-        
-        
+     
 
         master.add(m1);
         master.add(m2);
@@ -372,9 +363,7 @@ public class Project extends JFrame implements ActionListener{
             new EnterMarks().setVisible(true);
         }
         
-    }
-    
-    
+    }  
     public static void main(String[] args){
         new Project().setVisible(true);
     }
